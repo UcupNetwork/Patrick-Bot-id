@@ -191,20 +191,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 🔖 ᴏᴩᴛɪᴏɴ ʟɪsᴛ:
 ⮕ antidelete
 ⮕ antilink
-⮕ antitoxic (dis-continued)
-⮕ autolevelup
-⮕ autoread
-⮕ detect
-⮕ document
-⮕ getmsg
-⮕ gconly
-⮕ nyimak
-⮕ pconly
-⮕ public
-⮕ restrict
-⮕ swonly
 ⮕ welcome
-⮕ whitelistmycontacts (dis-continued)
 
 ===========================
 ★ ᴜsᴀɢᴇ:

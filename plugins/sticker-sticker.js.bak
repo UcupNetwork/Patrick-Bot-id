@@ -49,7 +49,7 @@ handler.help = ['sticker (tag image/gif/video)', 'sticker <url>']
 handler.tags = ['Sticker']
 handler.command = /^(s|sticker|sgif|stickergif)$/i
 
-handler.limit = true
+handler.limit = 44
 
 export default handler
 

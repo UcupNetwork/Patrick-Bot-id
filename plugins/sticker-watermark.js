@@ -22,6 +22,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = ['watermark <packname>|<author>']
 handler.tags = ['Sticker']
+handler.limit = 2
 handler.command = /^(wm|watermark)$/i
 
 export default handler

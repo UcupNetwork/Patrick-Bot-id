@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text }) => {
     let yh = global.random
     let url = yh[Math.floor(Math.random() * yh.length)]
-    conn.sendButton(m.chat, 'RANDOM ANIME', 'dari adit ', url, [['tq', ' ']], m)
+    conn.sendButton(m.chat, 'RANDOM ANIME', 'wa.me/6283133162295\nsv adit ', url, [['tq', ' ']], m)
   }
   handler.command = /^(random)$/i
   handler.tags = ['anime']

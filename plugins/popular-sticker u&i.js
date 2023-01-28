@@ -8,6 +8,7 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })
   handler.command = /^(upinipin)$/i
   handler.tags = ['popular sticker']
   handler.help = ['upinipin']
+  handler.limit = true
   //handler.private = true 
   
   export default handler

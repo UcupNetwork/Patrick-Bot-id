@@ -121,7 +121,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 conn.sendButton(m.chat,  `${wish()}﹗`, text.trim(), `${timeimg()}`,
 [
 ['OWNER', '.owner'],
-['GRUP', '.group']
+['GRUP', '.grup']
 ])
   } catch (e) {
     conn.reply(m.chat, 'Sorry, something is error in menu.js', m)
