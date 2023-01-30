@@ -10,7 +10,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     await conn.sendFile(m.chat, out, 'out.png', '*DONE*', m)
 }
 handler.help = ['toimg2 (reply)']
-handler.tags = ['sticker']
+handler.tags = ['Sticker']
 handler.command = ['toimg2']
 
 

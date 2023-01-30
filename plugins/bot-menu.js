@@ -14,9 +14,9 @@ const defaultMenu = {
 ••••••••••••••••••••••••••••••
 *⇓ Klik Di Bawah ⇓*
 %readmore`.trimStart(),
-  header: '╭─ *〘 %category 〙*\n│',
-    body: '├> %cmd %islimit %isPremium',
-  footer: '│\n╰────˧\n',
+  header: '┏┅┄┄⟞⟦  *%category* ⟧⟝┄┄┉┓\n┃',
+    body: '┣❐ %cmd %islimit %isPremium',
+  footer: '┃\n┗━━━━┫⌗\n',
    after: `••••••••••••••••••••••••••••••\nPatrick Bot`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {

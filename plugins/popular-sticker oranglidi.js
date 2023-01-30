@@ -1,10 +1,12 @@
 import { sticker } from '../lib/sticker.js'
-let handler = async (m, { conn, text }) => {
-    let yh = global.oranglidi
-    let url = yh[Math.floor(Math.random() * yh.length)]
-    let stiker = await sticker(null, url, `⌤︎\n𝚁︎\n𝙰︎\n𝙶︎\n𝙸︎\n𝙻︎\n︎\n⌂︎\n︎\n𝗕︎\n𝗢︎\n𝗧︎\n✦︎\n❒︎\nwa.me/62831331622950︎\n︎\n︎\n⌦   𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝙱𝚈 𝚁𝙰𝙶𝙸𝙻 𝙱𝙾𝚃   ⌫\n                     © ②⓪②② ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
-conn.sendFile(m.chat, stiker, null, { asSticker: true })
-} 
+
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+
+let stiker = await sticker(null, global.API(`${pickRandom(oranglidi)}`), global.packname, global.author)
+    if (stiker) return conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
+    throw stiker.toString()
+    
+}
   handler.command = /^(oranglidi)$/i
   handler.tags = ['popular sticker']
   handler.help = ['oranglidi']
@@ -12,7 +14,9 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })
   //handler.private = true 
   
   export default handler
-  
+  function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
   global.oranglidi = [
 "https://telegra.ph/file/f20c414413f84b3f8aca1.jpg",
 "https://telegra.ph/file/5331c6e7af8dc3aff3614.jpg",

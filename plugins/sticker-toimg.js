@@ -24,7 +24,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     } else throw notStickerMessage
 }
 handler.help = ['toimg (reply)']
-handler.tags = ['sticker']
+handler.tags = ['Sticker']
 handler.command = /^toimg$/i
 
 

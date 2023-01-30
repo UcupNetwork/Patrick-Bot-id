@@ -13,7 +13,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (stiker) await conn.sendFile(m.chat, stiker, '', author, m, '', { asSticker: 1 })
 }
 handler.help = ['smeme']
-handler.tags = ['sticker']
+handler.tags = ['Sticker']
 handler.command = /^(smeme)$/i
 
 
