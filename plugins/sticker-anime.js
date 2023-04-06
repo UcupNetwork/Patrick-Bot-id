@@ -12,7 +12,7 @@ handler.help = ['stickanime']
 handler.tags = ['popular sticker']
 handler.command = /^(stickanime|animestick)$/i
 handler.limit = true
-
+handler.private = true
 export default handler
 
 function pickRandom(list) {
