@@ -42,14 +42,14 @@ ${usedPrefix + command} https://raw.githubusercontent.com/DineshValor/valor/bot/
     if (!stiker) stiker = e
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
-    else throw `ᴛᴀɢ ᴀ ɪᴍᴀɢᴇ ᴏʀ ɢɪғ ᴏʀ ᴠɪᴅᴇᴏ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ *_"${usedPrefix + command}"_*`
+    else throw `kirim atau reply foto dengan command *_"${usedPrefix + command}"_*`
   }
 }
 handler.help = ['sticker (tag image/gif/video)', 'sticker <url>']
 handler.tags = ['Sticker']
 handler.command = /^(s|sticker|sgif|stickergif)$/i
 
-handler.limit = 44
+handler.limit = true
 
 export default handler
 
