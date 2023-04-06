@@ -14,9 +14,9 @@ const defaultMenu = {
 ••••••••••••••••••••••••••••••
 *⇓ Klik Di Bawah ⇓*
 %readmore`.trimStart(),
-  header: '╭─ *〘 %category 〙*\n│',
-    body: '├> %cmd %islimit %isPremium',
-  footer: '│\n╰────˧\n',
+  header: '┏┅┄┄⟞⟦  *%category* ⟧⟝┄┄┉┓\n┃',
+    body: '┣❐ %cmd %islimit %isPremium',
+  footer: '┃\n┗━━━━┫⌗\n',
    after: `••••••••••••••••••••••••••••••\nPatrick Bot`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
@@ -121,7 +121,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 conn.sendButton(m.chat,  `${wish()}﹗`, text.trim(), `${timeimg()}`,
 [
 ['OWNER', '.owner'],
-['GRUP', '.grup']
+['\ngw pedo ', '']
 ])
   } catch (e) {
     conn.reply(m.chat, 'Sorry, something is error in menu.js', m)
@@ -141,19 +141,31 @@ const readMore = more.repeat(4001)
 
 function wish() {
     let wishloc = ''
-  const time = moment.tz('Asia/Jakarta').format('HH')
+  const time = moment.tz('Asia/Makassar').format('HH')
   wishloc = ('Hi')
   if (time >= 0) {
-    wishloc = ('Night Rider')
+    wishloc = ('malam tod')
   }
-  if (time >= 4) {
+    if (time >= 4) {
     wishloc = ('Selamat Pagi Sayang')
   }
-  if (time >= 12) {
-    wishloc = ('Selamat Siang Beb')
+  if (time >= 6) {
+    wishloc = ('Selamat Pagi Sayangkuh Cintakuh🤗')
   }
-  if (time >= 16) {
-    wishloc = ('Malam Kawan')
+    if (time >= 8) {
+    wishloc = ('Selamat Pagi My baby honey 😚🤨🌈')
+  }
+  if (time >= 11) {
+    wishloc = ('Selamat Siang my babi 🗿👆')
+  }
+  if (time >= 15) {
+    wishloc = ('selamat sore my babu 😏')
+  }
+    if (time >= 18) {
+    wishloc = ('Selamat byy 🥺🤌')
+  }
+    if (time >= 21) {
+    wishloc = ('dah malem kont, tidur sono 🗿')
   }
   if (time >= 23) {
     wishloc = ('')
@@ -162,7 +174,7 @@ function wish() {
 }
 function timeimg() {
     let imgloc = ''
-  const time = moment.tz('Asia/Jakarta').format('HH')
+  const time = moment.tz('Asia/Makassar').format('HH')
   imgloc = ('./media/menu.jpg')
   if (time >= 0) {
     imgloc = ('./media/midnight.jpg')
@@ -177,27 +189,27 @@ function timeimg() {
     imgloc = ('./media/dawn.jpg')
   }
   if (time >= 6) {
-    imgloc = ('./media/sunrise.jpg')
+    imgloc = ('./media/dawn.jpg')
   }
-  if (time >= 7) {
+  if (time >= 8) {
     imgloc = ('./media/day.jpg')
   }
-  if (time >= 12) {
-    imgloc = ('./media/noon.jpg')
+  if (time >= 11) {
+    imgloc = ('./media/aftermid.jpg')
   }
   if (time >= 14) {
     imgloc = ('./media/afternoon.jpg')
   }
-  if (time >= 16) {
+  if (time >= 15) {
     imgloc = ('./media/evening.jpg')
   }
   if (time >= 18) {
-    imgloc = ('./media/sunset.jpg')
+    imgloc = ('./media/midnight.jpg')
   }
   if (time >= 19) {
     imgloc = ('./media/dusk.jpg')
   }
-  if (time >= 20) {
+  if (time >= 21) {
     imgloc = ('./media/night.jpg')
   }
   return imgloc

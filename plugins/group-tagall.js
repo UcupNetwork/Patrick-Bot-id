@@ -18,11 +18,11 @@ let handler = async(m, { conn, usedPrefix, text, participants }) => {
     user.lasttag = new Date * 1
 }
 handler.help = ['tagall <text>']
-handler.tags = ['Group']
+handler.tags = ['group']
 handler.command = /^(tagall|all|everyone|saare|suno)$/i
 
 handler.group = true
-handler.limit = false
+handler.limit = 10
 handler.cooldown = cooldown
 
 export default handler
