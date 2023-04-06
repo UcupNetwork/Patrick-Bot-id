@@ -1,5 +1,5 @@
 let handler = async (m, { conn, args, command }) => {
-    let chat = Object.keys(conn.chats).filter(v => v.endsWith('g.us'))
+    
     if (command.endsWith('all') || command.endsWith('semua')) {
         for (let id of chat) { // perulangan
             await conn.groupLeave(id)

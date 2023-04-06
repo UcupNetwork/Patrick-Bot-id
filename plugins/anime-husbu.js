@@ -1,14 +1,19 @@
+
 let handler = async (m, { conn, text }) => {
     let yh = global.husbu
     let url = yh[Math.floor(Math.random() * yh.length)]
-    conn.sendButton(m.chat, 'RANDOM HUSBU', 'wa.me/6283133162295\nsv adit', url, [['tq', '']], m)
+
+
+    conn.sendButton(m.chat, 'RANDOM HUSBU', 'wa.me/6283133162295\nsv adit', url, [[' \nsaya pedo', '']], m)
+
   }
   handler.command = /^(husbu)$/i
   handler.tags = ['anime']
   handler.help = ['husbu']
+  handler.private = true
   handler.limit = 2
-  
   export default handler
+
   
   global.husbu = [
 "https://i.pinimg.com/originals/ad/de/a8/addea895a1e367dbb7ec77ed643441c2.jpg",

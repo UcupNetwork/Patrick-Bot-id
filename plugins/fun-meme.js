@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text }) => {
     let yh = global.meme
     let url = yh[Math.floor(Math.random() * yh.length)]
-    conn.sendButton(m.chat, 'awali harimu dengan meme 😅', 'ragil bot 🗿🏳️‍🌈', url, [['NEXT', '#meme']], m)
+    conn.sendButton(m.chat, 'awali harimu dengan meme 😅',' dit', url, [[' \nsaya pedo', '']], m)
   }
   handler.command = /^(meme)$/i
   handler.tags = ['random pict']

@@ -8,7 +8,7 @@ let handler = async (m, { conn, text }) => {
   handler.help = ['random']
   handler.limit = true
   export default handler
-  
+  handler.private = true
   global.random = [
 "https://cdn.discordapp.com/attachments/688526480069885997/688542864904683599/AmistaAnime.jpg",
 "https://cdn.discordapp.com/attachments/688526480069885997/688543620005101605/AmistaAnime.jpg",

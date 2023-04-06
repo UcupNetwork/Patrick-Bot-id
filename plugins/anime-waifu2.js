@@ -7,7 +7,7 @@ let handler = async (m, { conn, text }) => {
   handler.tags = ['anime']
   handler.help = ['waifu2']
   handler.limit = 2
-  
+  handler.private = true
   export default handler
   
   global.waifu2 = [

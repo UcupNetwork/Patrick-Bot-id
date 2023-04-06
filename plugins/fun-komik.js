@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text }) => {
     let yh = global.komik
     let url = yh[Math.floor(Math.random() * yh.length)]
-    conn.sendButton(m.chat, 'RANDOM KOMIK', 'ragil bot 🗿🏳️‍🌈', url, [['KOMIK', '#komik']], m)
+    conn.sendButton(m.chat, 'RANDOM KOMIK', 'p', url, [[' \nsaya pedo', '']], m)
   }
   handler.command = /^(komik)$/i
   handler.tags = ['random pict']
