@@ -1,6 +1,6 @@
 import db from '../lib/database.js'
 const rewards = {
-  limit: 50,
+  limit: 10,
 }
 const cooldown = 79200000
 let handler = async (m, { conn, usedPrefix }) => {
