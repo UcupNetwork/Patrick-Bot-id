@@ -191,7 +191,7 @@ export async function handler(chatUpdate) {
 
                     money: 0,
                     health: 100,
-                    limit: 50,
+                    limit: 25,
                     potion: 10,
                     trash: 0,
                     wood: 0,
@@ -625,11 +625,11 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || Connection.conn.welcome || 'Valor Bot is a suite of open source software for WhatsApp Application based on Baileys WebSocket API.\n\n_Some highlight features:_\n• Downloader (youtube, fb, insta, tiktok)\n• Sticker Creator\n• Tag All\n• Games\n• Internet Search (text & image search)\n• AFK\n• Broadcast\n\n*Valor Bot Source*\nhttps://bit.ly/Valor_Bot\n\n*Valor Bot Test Group*\nhttps://bit.ly/Valor_Bot_Test\n\nType *_".menu | .valor | .help | .commands"_* to access bot command list.').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'ɴᴏ ɢʀᴏᴜᴩ ᴅᴇsᴄʀɪᴩᴛɪᴏɴ') :
-                            (chat.sBye || this.bye || Connection.conn.bye || 'Farewell! God knows when we shall meet again.')).replace('@user', '@' + user.split('@')[0])
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || Connection.conn.welcome || 'Valor Bot is a suite of open source software for WhatsApp Application based on Baileys WebSocket API.\n\n_Some highlight features:_\n• Downloader (youtube, fb, insta, tiktok)\n• Sticker Creator\n• Tag All\n• Games\n• Internet Search (text & image search)\n• AFK\n• Broadcast\n\n*Valor Bot Source*\nhttps://bit.ly/Valor_Bot\n\n*Valor Bot Test Group*\nhttps://bit.ly/Valor_Bot_Test\n\nType *_".menu | .valor | .help | .commands"_* to access bot command list.').replace('@subject', await this.getName(id)).replace('pp', groupMetadata.desc?.toString() || 'ɴᴏ ɢʀᴏᴜᴩ ᴅᴇsᴄʀɪᴩᴛɪᴏɴ') :
+                            (chat.sBye || this.bye || Connection.conn.bye || 'dadah.')).replace('@user', '@' + user.split('@')[0])
                             
-                        this.sendButton(id, (action === 'add' ? ('*Welcome,* @user') :
-                            ('*Bye,* @user')).replace('@user', '@' + user.split`@`[0]), text, pp, [[action === 'add' ? 'ᴍᴇɴᴜ' : 'ᴍᴇɴᴜ', '/menu']], null, { mentions: [user] })
+                        this.sendButton(id, (action === 'add' ? ('*Selamat Datang 🤗,* @user') :
+                            ('*Selamat Tinggal 🥺,* @user')).replace('@user', '@' + user.split`@`[0]), text, pp, [[action === 'add' ? '\nsy pedo 😋' : ' \ngw pedo bng', '']], null, { mentions: [user] })
                     }
                 }
             }
@@ -706,13 +706,13 @@ export async function deleteUpdate(message) {
 global.dfail = (type, m, conn) => {
     let msg = {
         rowner: 'ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ʙʏ _*OWNER*_',
-        owner: 'ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ʙʏ _*Owner Bot*_!',
+        owner: 'perintah ini hanya bisa digunakan oleh owner bot',
         mods: 'ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ʙʏ _*Moderator*_ !',
         premium: 'ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴏɴʟʏ ғᴏʀ _*Premium Members*_!',
-        group: 'ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ɪɴ *Groups*!',
-        private: 'ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ɪɴ *Private Chat*!',
-        admin: 'ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴏɴʟʏ ғᴏʀ *Group Admin*!',
-        botAdmin: 'ᴍᴀᴋᴇ ʙᴏᴛ ᴀs *Admin* ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ﹗',
+        group: 'perintah ini hanya bisa digunakan di dalam grup!',
+        private: 'perintah ini hanya bisa digunakan di private chat',
+        admin: 'perintah ini hanya bisa digunakan oleh admin!',
+        botAdmin: 'jadikan bot sebagai admin untuk menjalankan perintah ini',
         unreg: 'ᴩʟᴇᴀsᴇ ʀᴇɢɪsᴛᴇʀ ᴛᴏ ᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ʙʏ ᴛʏᴩɪɴɢ:\n\n*#register name.age*\n\n★ ᴇxᴀᴍᴩʟᴇ: *#register Valor.23*',
         restrict: 'ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪs *disabled*!'
     }[type]
