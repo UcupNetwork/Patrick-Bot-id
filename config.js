@@ -42,9 +42,10 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '083133162295'
-global.author = 'Adit'
+global.packname = 'hai adick adick\n\n\n\n\n\n\n'
+global.author = 'wa.me/6283133162295 sv adit cuy'
 global.wm = 'affh'
+global.sgc = 'https://chat.whatsapp.com/EoHK5srph9419EgkDkRkos'
 
 global.multiplier = 69 // The higher, The harder levelup
 
